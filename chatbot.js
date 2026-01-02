@@ -38,7 +38,7 @@ export async function generate(userMessage, threadId) {
   });
 
   const MAX_RETRIES = 10;
-  const count = 0;
+  let count = 0;
 
   while (true) {
 
