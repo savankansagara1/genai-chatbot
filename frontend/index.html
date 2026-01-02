@@ -1,0 +1,62 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChatGPT Clone</title>
+
+    <!-- Tailwind -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+
+  <body class="bg-[#343541] text-white h-screen flex flex-col">
+
+    <!-- Header -->
+    <div class="h-14 flex items-center justify-center border-b border-white/10">
+      <h1 class="text-lg font-medium">ChatGPT</h1>
+    </div>
+
+    <!-- Chat Area -->
+    <div id="chatBox" class="flex-1 overflow-y-auto px-4 py-6 space-y-6">
+      
+      <!-- Bot welcome -->
+      <div class="flex gap-4">
+        <div class="w-8 h-8 rounded-full bg-green-500 flex items-center justify-center font-bold">
+          G
+        </div>
+        <div class="bg-[#444654] p-4 rounded-lg max-w-2xl">
+          Hello 👋  
+          How can I help you today?
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Input Bar -->
+    <div class="border-t border-white/10 p-4">
+      <div class="max-w-3xl mx-auto flex items-center gap-2 bg-[#40414f] rounded-xl px-3 py-2">
+        
+        <input
+          id="userInput"
+          type="text"
+          placeholder="Send a message..."
+          class="flex-1 bg-transparent outline-none text-white placeholder-gray-400"
+        />
+
+        <button
+          id="sendBtn"
+          class="text-gray-400 hover:text-white transition"
+        >
+          ➤
+        </button>
+
+      </div>
+
+      <p class="text-center text-xs text-gray-400 mt-2">
+        ChatGPT can make mistakes. Consider checking important information.
+      </p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+  </html>
