@@ -89,7 +89,7 @@ async function botReply(inputText) {
   const loadingElement = showLoading();
 
   try {
-    const response = await fetch("http://localhost:3001/chat", {
+    const response = await fetch("https://genai-chatbot-8trf.onrender.com/chat", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({threadId: threadId, message: inputText })
