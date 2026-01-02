@@ -36,5 +36,5 @@ app.post("/chat", async (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`Backend server is running at http://localhost:${port}`);
+  console.log(`Backend server is running at http://localhost:${PORT}`);
 });
